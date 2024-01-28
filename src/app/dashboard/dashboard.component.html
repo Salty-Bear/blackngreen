@@ -1,0 +1,76 @@
+<div class="body">
+  <div class="sidebar">
+    <img class="logopattern" src="assets\login\blackngreen_logo.jpeg" alt="">
+
+    <div class="basicoption">
+      <ul>
+        <button class="sidepanelbutton">Home</button>
+      </ul>
+      <ul>
+        <button class="sidepanelbutton">Library</button>
+      </ul>
+
+      <ul>
+        <button class="sidepanelbutton">Sessions</button>
+      </ul>
+
+      <p class="section">My Collection</p>
+
+    </div>
+  </div>
+
+  <div class="top-panel">
+    <p class="company">Dashboard</p>
+
+    <!-- <form class="search-container">
+      <input type="text" id="search-bar" placeholder="What can I help you with today?">
+      <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+    </form> -->
+
+    <div class="formData">
+      <mat-grid-list cols="3" rowHeight="3:1">
+
+        <mat-grid-tile>
+          <mat-form-field class="example-full-width">
+            <mat-label>ID</mat-label>
+            <input [(ngModel)]="item.id" matInput placeholder="123" >
+          </mat-form-field>
+        </mat-grid-tile>
+
+        <mat-grid-tile>  <mat-form-field class="example-full-width">
+          <mat-label>Shift</mat-label>
+          <input [(ngModel)]="item.shift" matInput placeholder="Morning">
+        </mat-form-field>
+      </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field class="example-full-width">
+            <mat-label>Server Type</mat-label>
+            <input [(ngModel)]="item.servertype" matInput placeholder="Exynos" >
+          </mat-form-field>
+        </mat-grid-tile>
+      </mat-grid-list>
+
+
+
+      <mat-grid-list cols="2" rowHeight="3:1">
+        <mat-grid-tile>
+          <mat-form-field class="example-full-width">
+            <mat-label>Server</mat-label>
+            <input [(ngModel)]="item.server" matInput placeholder="minecraft" >
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field class="example-full-width">
+            <mat-label>OP CO</mat-label>
+            <input [(ngModel)]="item.opco" matInput placeholder="Ex. Pizza" >
+          </mat-form-field>
+        </mat-grid-tile>
+      </mat-grid-list>
+
+      <button class="submit" (click)="add()" mat-raised-button color="accent">Submit</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="search">  </div>

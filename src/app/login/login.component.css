@@ -1,0 +1,343 @@
+.leftpanel{
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  background-color: #789461;
+  box-shadow: 30px 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  overflow-y: auto;
+}
+
+
+
+.skull{
+  position: relative;
+  top: 0vh;
+  left: 25%;
+  width: 50%;
+  transition: all .3s ease-out;
+}
+
+.skull:hover{
+  transform: translate(0, -0.5%);
+}
+
+.pluto{
+  position: absolute;
+  width: 25%;
+  top: 0;
+  transition: all .3s ease-out;
+}
+
+.pluto:hover{
+  transform: translate(0, -0.5%);
+}
+
+.meteor1{
+  position: absolute;
+  z-index: 2;
+  width: 10vh;
+}
+
+
+
+.meteor2{
+  position: absolute;
+  z-index: 2;
+  width: 10vh;
+  bottom: 20%;
+  left: 10%;
+}
+
+
+
+
+.meteor3{
+  position: absolute;
+  z-index: 2;
+  width: 10vh;
+  bottom: 20%;
+  left: 80%;
+}
+
+
+.meteor4{
+  position: absolute;
+  z-index: 2;
+  width: 10vh;
+  top: 20%;
+  left: 80%;
+
+}
+
+.meteor5{
+  position: absolute;
+  z-index: 2;
+  width: 10vh;
+  top: 50%;
+  left: 2%;
+}
+
+.planet1{
+  position: absolute;
+  top: 2%;
+  width: 5%;
+  left: 85%;
+  transition: all .3s ease-out;
+}
+
+.planet1:hover{
+  transform: translate(0, -2%);
+}
+
+.planet2{
+  position: absolute;
+  top: 50%;
+  left: 76%;
+  width: 4%;
+  transition: all .3s ease-out;
+}
+
+.planet2:hover{
+  transform: translate(0, -2%);
+}
+
+.planet3{
+  position: absolute;
+  bottom: 8%;
+  left: 17%;
+  width: 4%;
+  transition: all .3s ease-out;
+}
+
+.planet3:hover{
+  transform: translate(0, -2%);
+}
+
+.dot1{
+  position: absolute;
+  width: 0.5%;
+  left: 30%;
+  top: 10%;
+}
+
+.dot2{
+  position: absolute;
+  width: 0.7%;
+  left: 75%;
+  top: 7%;
+}
+
+.dot3{
+  position: absolute;
+  width: 0.3%;
+  left: 20%;
+  top: 40%;
+}
+
+.dot3{
+  position: absolute;
+  width: 0.3%;
+  left: 20%;
+  top: 40%;
+}
+
+
+.dot4{
+  position: absolute;
+  width: 0.6%;
+  left: 14%;
+  top: 70%;
+}
+
+.dot5{
+  position: absolute;
+  width: 0.6%;
+  left: 7%;
+  bottom: 10%;
+}
+
+.dot6{
+  position: absolute;
+  width: 0.6%;
+  left: 47%;
+  bottom: 5%;
+}
+
+
+.dot7{
+  position: absolute;
+  width: 0.6%;
+  left: 89%;
+  bottom: 12%;
+}
+
+
+.dot8{
+  position: absolute;
+  width: 0.3%;
+  left: 78%;
+  bottom: 30%;
+}
+
+
+.dot9{
+  position: absolute;
+  width: 0.3%;
+  left: 90%;
+  bottom: 38%;
+}
+
+.dot10{
+  position: absolute;
+  width: 0.7%;
+  left: 87%;
+  bottom: 68%;
+}
+
+.title{
+  font-family: Nunito sans;
+  color: black;
+  font-weight: 900;
+  display: block;
+  margin: auto;
+  font-size: xx-large;
+}
+
+.text{
+  position: relative;
+  font-family: Nunito sans;
+  color: #BFD8AF;
+  width: fit-content;
+  left: 35.5%;
+  bottom: -5%;
+  margin: 1%;
+}
+
+.semi{
+  position: absolute;
+  z-index: 2;
+  left: 54%;
+  bottom: 0;
+  width: 10%;
+}
+
+.logo1{
+  position: relative;
+  width: 15%;
+}
+
+
+
+.rightpanel{
+  position: absolute;
+  height: fit-content;
+  width: 25%;
+  height: 50%;
+  top:20%;
+  right: 7%;
+}
+
+.logintext{
+  font-family: Nunito Sans;
+  color: #525252;
+  font-size: 3.5vh;
+  font-weight: 800;
+
+  margin-top: 10%;
+}
+
+.loginquote{
+  font-family: Nunito Sans;
+  color: #525252;
+  font-weight: 400;
+  line-height: 5%
+}
+
+.signbutton{
+  margin-top: 10%;
+}
+
+
+.companylogo1{
+  position:relative;
+  width: 4%;
+  margin-top: 2%;
+  
+}
+
+.companylogo2{
+  position:relative;
+  width: 4%;
+  margin-top: 2%;
+}
+
+.companylogo3{
+  position:relative;
+  width: 5%;
+  margin-top: 2%;
+}
+.companylogo4{
+  position:relative;
+  width: 4%;
+  margin-top: 2%;
+  padding-right: 2%;
+}
+
+.bungusbrand{
+  position: absolute;
+  right: 5%;
+  top: 2%;
+  width: 5%;
+}
+
+
+.companyLogo{
+  width: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 25%;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  body{
+    overflow-x: hidden;
+  }
+
+
+  .leftpanel{
+    display: none;
+  }
+
+  .rightpanel{
+    position: relative;
+    top: 15%;
+    left: 15%;
+    height: 60%;
+    width: 70%;
+  }
+
+  .signbutton{
+    height: 10% !important;
+  }
+
+  .bungusbrand{
+    width: 10%;
+    top: 2%;
+    right: 10%;
+  }
+
+  .logintext{
+    font-size: x-large;
+  }
+
+  .logolabel{
+    color: #a0a0a0;
+    font-family: Montserrat;
+    font-size: x-large;
+    font-weight: 800;
+    text-align: center;
+    margin: 7%;
+  }
+}
