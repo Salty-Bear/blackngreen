@@ -22,7 +22,6 @@ export class LoginComponent {
 
   isMobile=false
   openSnackBar(message:string){
-    console.log('helo')
     this.snackbar.open(message,'Undo',{
       duration:5000
     })

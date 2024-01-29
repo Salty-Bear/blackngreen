@@ -20,19 +20,25 @@ export class DashboardComponent {
     time:0
   };
 
-  constructor(private itemservice:ItemserviceService,private _snackBar: MatSnackBar){
+  constructor(private itemservice:ItemserviceService,public snackBar: MatSnackBar){
   }
   add(){
     const current = new Date();
     const timestamp = current.getTime();
     this.item.time=timestamp;
     this.itemservice.add(this.item);
-    // this.openSnackBar("Blog Added Sucessfully","Close")
+    this.openSnackBar("Data Added Sucessfully")
     this.item.id="";
     this.item.shift="";
     this.item.server="";
     this.item.servertype="";
     this.item.opco="";
+  }
+
+  openSnackBar(message:string){
+    this.snackBar.open(message,'Undo',{
+      duration:5000
+    })
   }
 
 }
